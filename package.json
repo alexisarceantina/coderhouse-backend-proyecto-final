@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --config=webpack.config.js --mode=production",
+    "dev": "webpack --watch --config=webpack.config.js --mode=development",
+    "start": "nodemon dist/bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.14",
+    "nodemon-webpack-plugin": "^4.5.2",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "uuid": "^8.3.2"
+  }
+}
